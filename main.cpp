@@ -8,11 +8,11 @@ int main() {
   print_state(lives);
   srand(time(0));
   std::string used_letters = "";
-  std::string computer_choice = wordlist[rand() % wordlist.size()];
 
-  do {
+  std::string computer_choice = wordlist[rand() % wordlist.size()];
+  while (!isValid(computer_choice)) {
     computer_choice = wordlist[rand() % wordlist.size()];
-  } while (!isValid(computer_choice));
+  }
 
   std::string display_string(computer_choice.size(), '_');
 
