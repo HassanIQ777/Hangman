@@ -2,7 +2,6 @@
 #include<string>
 #include<ctime>
 #include<cctype>
-#include<algorithm>
 #include<thread>
 #include<chrono>
 using namespace std;
